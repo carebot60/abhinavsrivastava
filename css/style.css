@@ -1,0 +1,503 @@
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar, .container-fluid{
+    padding: 0;
+    background: #47b18e8f;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: #ffffff;
+}
+
+/* #navbarSupportedContent{
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+} */
+
+.navbar{
+    position: fixed;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    z-index: 1;
+}
+
+.nav-link{
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+}
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21rem;
+    background: #47b18e8f;
+}
+
+.intro-block{
+    text-align: center;
+}
+
+.intro-block h4{
+    margin-bottom: 0.8rem;
+}
+
+#about,
+#articles{
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#articles{
+    padding-top: 0;
+}
+
+.section-title::after, 
+.section-title::after{
+    content: '';
+    /* background: url('../images/title-line.png'); */
+}
+
+.section-body{
+    margin: 0.5rem 2rem;
+    text-align: center;
+    font-size: 16px;
+}
+
+#about-block{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-block > div{
+    text-align: left;
+}
+
+#about-photo{
+    margin-right: 1rem;
+}
+
+#articles-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    min-width: 64rem;
+}
+
+.card{
+    width: 20rem; 
+    text-align: left;
+}
+
+.card-img-top{
+    width: 6rem;
+    margin: 0 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.card-title{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.card-body{
+    padding: 0.35rem;
+}
+
+.card-text{
+    font-size: 0.95rem;
+}
+
+.publish-date{
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 0.25rem;
+}
+
+.read-more a{
+    text-decoration: none;
+}
+
+/* Copied from - https://codepen.io/exemple/pen/GRJwxNO */
+.toZoom {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 1.65rem 0;
+    width: 19rem;
+}
+  
+.toZoom:hover {
+    opacity: 0.7;
+}
+  
+.modal {
+  display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 93%;
+  /* max-width: 700px; */
+}
+
+/* Add Animation */
+.modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1)
+} 
+  to {
+    transform: scale(1)
+}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1072px) {
+    #about,
+    #articles{
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    #articles-list{
+        display: grid;
+        grid-template-columns: 20rem 20rem;
+        grid-template-rows: 20rem 20rem;
+        min-width: fit-content;
+        gap: 2rem 5rem;
+    }
+
+    #last-item{
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+  
+/* 100% Image Width on Smaller Screens
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} */
+
+/* End */
+
+#bottom{
+    /* background: url('../images/contact.jpg'); */
+    /* background: #e5e7e9; */
+    background: #151414;
+    background-size: cover;
+}
+
+#blocks{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#block1,
+#block2,
+#block3{
+    font-family: cursive;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-img{
+    height: 4rem;
+}
+
+.block-info{
+    margin: 0 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f8eeee;
+    max-width: 12rem;
+    text-align: left;
+}
+
+.block-info a{
+    text-decoration: none;
+    color: #f8eeee;
+}
+
+#row{
+    background: #212121;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.15rem;
+}
+
+#connect-text{
+    font-size: 16px;
+    color: #f8eeee;
+}
+
+#connect-text p{
+    margin: 0;
+    margin-top: 0.15rem;
+}
+
+.social-media-link img{
+    height: 2.2rem;
+}
+
+#footer-block{
+    padding: 0.75rem 0;
+    background: #47b18e8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-block > p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:930px) {
+    #about{
+        padding: 2rem;
+    }
+
+    .block-img{
+        height: 3rem;
+    }
+
+    .block-info{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:830px) {
+    #articles-list{
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #articles-list{
+        min-width: fit-content;
+    }
+}
+
+@media screen and (max-width:720px /* 768px */) { 
+    #blocks{
+        flex-direction: column;    
+    }
+
+    #block1,
+    #block2,
+    #block3{
+        padding: 1rem;
+        width: 17rem;
+        justify-content: flex-start;
+    }
+
+    .block-info{
+        margin-right: 0;
+    }
+
+    .block-info a,
+    .block-info p{
+        font-size: 15px;
+    }
+
+    #about-block{
+        flex-direction: column;
+    }
+
+    #about-photo,
+    #about-block > div{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    #articles{
+        padding-top: 0;
+    }
+
+    #articles-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: fit-content;
+        margin: 0;
+        gap: 0;
+    }
+
+    .card{
+        margin-top: 1.5rem;
+    }
+
+    #about-photo{
+        text-align: center;
+    }
+
+    #about-photo img{
+        width: 16rem;
+        height: 18rem;
+        margin-bottom: 1rem;
+    }
+
+    #about-block{
+        padding: 0;
+    }
+
+    .section-body{
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #row{
+        justify-content: space-between;  
+    }
+}
+
+@media screen and (max-width:420px) {
+    #row{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #connect-text,
+    #connect-links{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .card{
+        width: 18.75rem;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+
+    .publish-date,
+    .card-text{
+        font-size: 14.85px;
+    }
+
+    .toZoom{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .card{
+        width: 17.5rem;
+        /* height : 14rem;
+        font-size
+         */
+    }
+
+    .toZoom{
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .card{
+        width: 16.5rem;
+        /* height : 14rem;
+        font-size
+         */
+    }
+
+    .toZoom{
+        width: 15.75rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .card{
+        width: 15.5rem;
+        /* height : 14rem;
+        font-size
+         */
+    }
+
+    .card-title{
+        font-size: 17px;
+    }
+
+    .publish-date,
+    .card-text{
+        font-size: 14px;
+    }
+
+    #about-photo img{
+        width: 13rem;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+
+    .toZoom{
+        width: 14.75rem;
+    }
+}
