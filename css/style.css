@@ -251,7 +251,7 @@ html{
 #block1,
 #block2,
 #block3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     padding: 2rem;
     display: flex;
     flex-direction: row;
